@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>DAWG — Discipline, Motivation & RPG Habit Transformation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐺</text></svg>">
+</head>
+<body>
+
+  <!-- Main Device Frame -->
+  <div class="device-container mobile-mode" id="deviceContainer">
+    
+    <!-- Phone Island / Dynamic Island for Realistic Mobile View -->
+    <div class="phone-island">
+      <div class="camera"></div>
+      <div class="sensor"></div>
+    </div>
+
+    <!-- Top Sticky Header -->
+    <header class="app-header" id="appHeader" style="display: none;">
+      <div class="header-user-info" id="headerUserInfo">
+        <div class="header-avatar-ring" id="headerAvatar">
+          <!-- Dynamic SVG Avatar -->
+        </div>
+        <div class="header-meta">
+          <div class="header-level-badge" id="headerLevelBadge">
+            <span>LVL 4</span> • <span>ASCENDANT II</span>
+          </div>
+          <div class="header-user-name">Hunter</div>
+        </div>
+      </div>
+
+      <div class="header-badges">
+        <div class="stat-pill streak" id="headerStreak">🔥 7 DAYS</div>
+        <div class="stat-pill gems" id="headerGems">💎 250</div>
+        <button class="sound-toggle-btn active" id="btnSoundToggle" title="Toggle Sound FX">
+          🔊
+        </button>
+      </div>
+    </header>
+
+    <!-- Header XP Progress Bar -->
+    <div class="header-xp-container" id="headerXp" style="display: none;">
+      <div class="xp-label-row">
+        <span>LEVEL PROGRESSION</span>
+        <span id="headerXpText">720 / 1000 XP</span>
+      </div>
+      <div class="xp-bar-bg">
+        <div class="xp-bar-fill" id="headerXpFill" style="width: 72%;"></div>
+      </div>
+    </div>
+
+    <!-- Main Dynamic Content Container -->
+    <main class="app-content" id="mainContent">
+      <!-- Injected dynamically by app.js (Onboarding or Dashboard Tabs) -->
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav" id="bottomNav" style="display: none;">
+      <button class="nav-item active" data-tab="quests">
+        <span class="nav-icon">⚔️</span>
+        <span>Quests</span>
+      </button>
+      <button class="nav-item" data-tab="radar">
+        <span class="nav-icon">📊</span>
+        <span>Stats</span>
+      </button>
+      <button class="nav-item" data-tab="evolution">
+        <span class="nav-icon">🐺</span>
+        <span>Evolution</span>
+      </button>
+      <button class="nav-item" data-tab="arena">
+        <span class="nav-icon">🏆</span>
+        <span>Arena</span>
+      </button>
+      <button class="nav-item" data-tab="timer">
+        <span class="nav-icon">⏱️</span>
+        <span>Timer</span>
+      </button>
+      <button class="nav-item" data-tab="settings">
+        <span class="nav-icon">⚙️</span>
+        <span>Settings</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <!-- Floating Viewport Mode Switcher (Bottom Right) -->
+  <aside class="viewport-toggle-bar">
+    <button class="viewport-btn active" id="btnMobileView">
+      📱 Mobile Frame
+    </button>
+    <button class="viewport-btn" id="btnDesktopView">
+      💻 Expanded View
+    </button>
+  </aside>
+
+  <!-- Application Entry Point -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>

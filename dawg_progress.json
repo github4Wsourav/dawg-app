@@ -1,0 +1,26 @@
+{
+  "updatedAt": "2026-11-09T18:34:00.000Z",
+  "user": {
+    "name": "Hunter",
+    "level": 4,
+    "xp": 720,
+    "xpToNextLevel": 1000,
+    "streak": 7,
+    "gems": 250,
+    "hoursSaved": 42.5,
+    "completedTotal": 28,
+    "rankTitle": "Ascendant II"
+  },
+  "stats": {
+    "physical": 78,
+    "mental": 82,
+    "discipline": 88,
+    "social": 65,
+    "ambition": 92,
+    "focus": 80
+  },
+  "selectedArchetype": "wolf",
+  "lastActiveDate": "2026-11-09T18:34:00.000Z",
+  "isLocked": false,
+  "penaltyDue": 0
+}
